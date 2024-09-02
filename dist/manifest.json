@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Feedback Brief Chrome Extension",
+    "description": "Chrome extension to add feedback from web apps to Feedback Brief",
+    "permissions": ["storage", "contextMenus", "activeTab", "identity", "cookies"],
+    "version": "1.0.0",
+    "action": {
+        "default_popup": "index.html",
+        "default_width": 600,
+        "default_height": 600
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "icons": {
+        "16": "./logo.png",
+        "48": "./logo.png",
+        "192": "./logo.png"
+    },
+    "host_permissions": ["http://localhost::3000"]
+}
