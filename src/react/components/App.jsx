@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { SignedIn, SignedOut, SignIn, SignUp, ClerkProvider, useUser, useAuth } from '@clerk/chrome-extension';
+import { SignedIn, SignedOut, SignIn ,ClerkProvider, useUser, useAuth } from '@clerk/chrome-extension';
 import { useNavigate, Routes, Route, MemoryRouter } from 'react-router-dom';
 import './App.css';
 import config from '../../../config.js';
@@ -53,8 +53,8 @@ function ClerkProviderWithRoutes() {
                     <div>
                         <Routes>
                             <Route
-                                path='/sign-up/*'
-                                element={<SignUp signUpUrl="/sign-up"/>}
+                                path='/sign-in/*'
+                                element={<SignIn signInUrl="/sign-in"/>}
                             />
                             <Route 
                                 path='/'
@@ -64,7 +64,7 @@ function ClerkProviderWithRoutes() {
                                             <HelloUser />
                                         </SignedIn>
                                         <SignedOut>
-                                            <SignIn 
+                                            <SignIn
                                                 signInUrl="/sign-in"
                                             />
                                         </SignedOut>
