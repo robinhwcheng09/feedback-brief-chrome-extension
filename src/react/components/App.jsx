@@ -54,7 +54,9 @@ function ClerkProviderWithRoutes() {
                         <Routes>
                             <Route
                                 path='/sign-in/*'
-                                element={<SignIn signInUrl="/sign-in"/>}
+                                element={<SignIn 
+                                            signUpUrl='/sign-up'
+                                        />}
                             />
                             <Route 
                                 path='/'
@@ -65,7 +67,7 @@ function ClerkProviderWithRoutes() {
                                         </SignedIn>
                                         <SignedOut>
                                             <SignIn
-                                                signInUrl="/sign-in"
+                                                signUpUrl="/sign-up"
                                             />
                                         </SignedOut>
                                     </>
