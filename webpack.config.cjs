@@ -27,7 +27,7 @@ module.exports = {
             }]
         }),
         new Dotenv({
-            path: "./.env",
+            path: "./.env.local",
             prefix: "process.env."
         })
     ],
