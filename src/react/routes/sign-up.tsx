@@ -4,7 +4,10 @@ export const SignUpPage = () => {
   return (
     <>
       <p>Sign Up</p>
-      <SignUp routing="virtual" />
+        <SignUp 
+          routing="virtual"
+          signInUrl="https://beloved-civet-31.accounts.dev/sign-in"
+          />
     </>
   )
 }

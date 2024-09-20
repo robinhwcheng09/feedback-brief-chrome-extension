@@ -16,5 +16,6 @@
             "js": ["contentScript.js"]
         }
     ],
+    "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkKhlR15n0Ka1lht3PhoNO4cZtCX/kIbH4BYUPF2zClVgfltprSVuzCgF1WFU+SwOpLT9qTgm63f0ZibdpRHLNyNcJ2aF/XKnyIOVboqcpAKV/4xmJnW1mkdDPOGbXaEV5S0M4oBmQYzSQsiIUsp3EeVLoqdaPm8ETrH1xbwpVQQiGEuP2pqgIvyZcWbkfFn9sNNpcNcwlABkTJoRmgRXk9j+F14V/j4IRx5mD9UzRDf3B5CfYrL1HPHMlnBmvP1VoY5Wb/1qZPkKPVbJXNzR5r0x3lvRJFew5IxuQx5gWlYUqTeSanG8ZgRDQ/CvjEYLeknVXMFGnPU6VWKK2X0OTQIDAQAB",
     "host_permissions": ["http://localhost::3000", "chrome-extension://mpogjkmkmilhgkibiilfaglpkiigifce", "https://beloved-civet-31.clerk.accounts.dev/"]
 }
