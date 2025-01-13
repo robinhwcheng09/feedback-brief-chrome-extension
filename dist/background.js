@@ -1,2 +1,0 @@
-chrome.runtime.onInstalled.addListener((function(){chrome.contextMenus.create({id:"addFeedback",title:"Add Feedback",contexts:["selection"]})})),chrome.contextMenus.onClicked.addListener((function(e){"addFeedback"===e.menuItemId&&(chrome.storage.local.set({selectedText:e.selectionText}),chrome.action.openPopup())}));
-//# sourceMappingURL=background.js.map
