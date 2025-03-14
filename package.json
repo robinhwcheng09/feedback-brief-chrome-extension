@@ -10,7 +10,7 @@
     "package": "plasmo package"
   },
   "dependencies": {
-    "@clerk/chrome-extension": "^2.2.15",
+    "@clerk/chrome-extension": "^2.2.16",
     "plasmo": "0.89.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -38,7 +38,9 @@
       "http://localhost/*",
       "$CLERK_FRONTEND_API/*",
       "$PLASMO_PUBLIC_CLERK_SYNC_HOST/*",
-      "$CLERK_FRONTEND_API/*"
+      "$CLERK_FRONTEND_API/*",
+      "https://www.feedbackbrief.com/*",
+      "$FEEDBACK_BRIEF_API_URL/*"
     ]
   }
 }
